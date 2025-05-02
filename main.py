@@ -10,7 +10,7 @@ import whisper
 app = FastAPI()
 
 # Load Whisper model once on startup
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 # Enable CORS
 app.add_middleware(
