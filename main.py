@@ -21,6 +21,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {"message": "FastAPI OCR/Audio/PDF API is running!"}
+
 @app.post("/extract-text/")
 async def extract_text_from_image(file: UploadFile = File(...)):
     try:
