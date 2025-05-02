@@ -5,5 +5,5 @@ PyPDF2==1.26.0
 pillow==9.4.0
 pytesseract==0.3.9
 pyngrok==5.1.0
-openai-whisper==1.0.0  # Make sure this is the correct version
+openai-whisper==20240930 # Make sure this is the correct version
 tesseract-ocr  # This is installed via apt, no need to include in requirements.txt
